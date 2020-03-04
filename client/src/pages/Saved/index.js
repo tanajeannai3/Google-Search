@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Row, Col } from "../../components/Grid";
-import { BookList, BookListItem } from "../../components/BookList";
+import { BookList, BookListItem } from "../../components/List";
 import axios from "axios";
 import EmptyList from '../../components/EmptyList';
-import RemoveBookBtn from '../../components/RemoveBookBtn';
+import RemoveBookBtn from '../../components/RmvBtn';
 import { toast } from 'react-toastify';
 
 
