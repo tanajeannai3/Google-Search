@@ -12,7 +12,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Nav/>
+        <Nav>
+        <Route exact path="/" component={Nav} />
+        </Nav>
         <Router>
           <Container>
           <ToastContainer

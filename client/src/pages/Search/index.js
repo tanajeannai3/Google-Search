@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import AddBookBtn from "../../components/BookBtn";
 import { Row, Col } from "../../components/Grid";
-import { BookList, BookListItem } from "../../components/List";
+import {List, BookListItem } from "../../components/List";
 import EmptyList from "../../components/EmptyList";
 
 
@@ -54,7 +54,7 @@ class Search extends Component {
                    
 
           {(this.state.books && this.state.books.length > 0) ? 
-          <BookList>
+          <List>
           {this.state.books.map(book => {
             return (
               <div>
@@ -82,7 +82,7 @@ class Search extends Component {
               </div>
             )
           })}
-          </BookList>
+          </List>
           : 
           <EmptyList/>         
           }

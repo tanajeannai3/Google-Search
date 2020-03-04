@@ -1,12 +1,12 @@
-import Button from "../Button";
+import Btn from "../Btn";
 import React from "react";
 
 
 function RmvBtn(props) {
     return (
-      <Button type="danger" className="delete-btn" {...props} role="button" tabIndex="0">
+      <Btn type="danger" className="delete-btn" {...props} role="button" tabIndex="0">
         Delete
-      </Button>
+      </Btn>
     );
   }
 

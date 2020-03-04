@@ -3,16 +3,17 @@ import Thumbnail from "../Thumbnail";
 import { Container, Row, Col } from "../Grid";
 
 
-export function List({children}) {
-  return (
-    <ul className="list-group">{children}</ul>
-    );
-}
+// export function Nav({children}) {
+//   return (
+//     <ul className="list-group">{children}</ul>
+//     );
+// }
 
-  export class BookListItem extends React.Component{
+  export default class Nav extends React.Component{
 
     render(){
      console.log(this.props)
+     
 ;    return (
       <li>
         <Container>

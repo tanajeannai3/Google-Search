@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Row, Col } from "../../components/Grid";
-import { BookList, BookListItem } from "../../components/List";
+import {List, BookListItem } from "../../components/List";
 import axios from "axios";
 import EmptyList from '../../components/EmptyList';
-import RemoveBookBtn from '../../components/RmvBtn';
+import RmvBookBtn from '../../components/RmvBtn';
 import { toast } from 'react-toastify';
 
 
@@ -43,7 +43,7 @@ class Saved extends Component {
         <Row>
           <Col size="md-12">
             {this.state.savedBooks.length > 0 ?
-              <BookList>
+              <List>
                 {this.state.savedBooks.map(book => {
                   console.log(book)
                   return (
@@ -64,7 +64,7 @@ class Saved extends Component {
                   )
 
                 })}
-              </BookList>
+              </List>
               :
               <EmptyList />
             }
